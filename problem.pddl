@@ -1,26 +1,70 @@
 (define (problem moveAmbulance)
     (:domain customer)
     (:objects
-    a1  - ambulance 
-    l4 l3 l2 l1  - location
+    a1 - ambulance 
+    l1 l2 l3 l4 l5 l6 l7 l8 l9 l10 l11 l12 l13 l14 l15 l16 - location
     p1 p2 - patient
-    h1  - hospital
+    h1 - hospital
     )
-
     (:init
         (hospital_locate h1 l1)
         (ambulance_locate a1 l1)
         (patient_locate p1 l4)
-        (patient_locate p2 l3)
+        (patient_locate p2 l11)
         (empty_ambulance a1)
-        (goto l1 l2) 
-        (goto l2 l3) 
+        (goto l1 l2)
+        (goto l2 l1)
+        (goto l2 l3)
+        (goto l3 l2)
         (goto l3 l4)
-
+        (goto l4 l3)
+        (goto l5 l6)
+        (goto l6 l5)
+        (goto l6 l7)
+        (goto l7 l6)
+        (goto l7 l8)
+        (goto l8 l7)
+        (goto l9 l10)
+        (goto l10 l9)
+        (goto l10 l11)
+        (goto l11 l10)
+        (goto l11 l12)
+        (goto l12 l11)
+        (goto l13 l14)
+        (goto l14 l13)
+        (goto l14 l15)
+        (goto l15 l14)
+        (goto l15 l16)
+        (goto l16 l15)
+        ;horizontal
+        (goto l1 l5)
+        (goto l5 l1)
+        (goto l2 l6)
+        (goto l6 l2)
+        (goto l3 l7)
+        (goto l7 l3)
+        (goto l4 l8)
+        (goto l8 l4)
+        (goto l5 l9)
+        (goto l9 l5)
+        (goto l6 l10)
+        (goto l10 l6)
+        (goto l7 l11)
+        (goto l11 l7)
+        (goto l8 l12)
+        (goto l12 l8)
+        (goto l9 l13)
+        (goto l13 l9)
+        (goto l10 l14)
+        (goto l14 l10)
+        (goto l11 l15)
+        (goto l15 l11)
+        (goto l12 l16)
+        (goto l16 l12)
 
     )
     (:goal
-        (and (attend_patient h1 p1) (attend_patient h1 p2) 
-        
+        (and (attend_patient h1 p1) (attend_patient h1 p2) )
+
     )
 )
