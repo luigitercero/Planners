@@ -10,7 +10,7 @@
         (hospital_locate h1 l1)
         (ambulance_locate a1 l1)
         (patient_locate p1 l4)
-        (patient_locate p2 l12)
+        (patient_locate p2 l11)
         (empty_ambulance a1)
         (goto l1 l2)
         (goto l2 l1)
