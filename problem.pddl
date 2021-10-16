@@ -21,8 +21,6 @@
     )
     (:goal
         (and (attend_patient h1 p1) (attend_patient h1 p2) 
-            (attend_patient h2 p3) (attend_patient h2 p4) 
-            (attend_patient h2 p5))
         
     )
 )
